@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>mangás</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="cabeçalho">
+    <div class="container">
+      <!-- Menu hambúrguer -->
+      <input type="checkbox" id="menu" class="container__botao">
+      <label for="menu" class="container__rotulo">
+        <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+      </label>
+      
+      <!-- Menu principal -->
+      <ul class="lista-menu">
+        <li class="lista-menu__titulo">Categorias</li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Programação</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Front-end</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Infraestrutura</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Business</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Design & UX</a>
+        </li>
+      </ul>
+
+      <!-- Menu Favoritos -->
+      <ul class="lista-menu">
+        <li class="lista-menu__titulo">Favoritos</li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Programação</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Front-end</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Infraestrutura</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Business</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Design & UX</a>
+        </li>
+      </ul>
+
+      <!-- Menu Minha Estante -->
+      <ul class="lista-menu">
+        <li class="lista-menu__titulo">Minha Estante</li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Programação</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Front-end</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Infraestrutura</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Business</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Design & UX</a>
+        </li>
+      </ul>
+ 
+      <!-- Logo e título -->
+      <img src="img/mangás.png" alt="Logo da Alurabooks" class="container__imagem">
+      <h1 class="container__titulo"><b class="container__titulo--negrito">Mangás</b></h1>
+    </div>
+  
+    <!-- Opções de menu (accordion) -->
+    <ul class="opções">
+      <!-- Categorias -->
+      <li class="opções__item">
+        <input type="checkbox" id="opcoes-categorias" class="opções__botão" />
+        <label for="opcoes-categorias" class="opções__rotulo">Categorias</label>
+        <ul class="lista-menu">
+          <li class="lista-menu__item"><a href="#" class="lista-menu__link">Kodomo </a></li>
+          <li class="lista-menu__item"><a href="#" class="lista-menu__link">Shonen</a></li>
+          <li class="lista-menu__item"><a href="#" class="lista-menu__link">Shoujo</a></li>
+          <li class="lista-menu__item"><a href="#" class="lista-menu__link">Seinen</a></li>
+          <li class="lista-menu__item"><a href="#" class="lista-menu__link">Josei</a></li>
+          <li class="lista-menu__item"><a href="#" class="lista-menu__link">Yaoi</a></li>
+        </ul>
+      </li>
+
+      <!-- Favoritos -->
+      <li class="opções__item">
+        <input type="checkbox" id="opcoes-favoritos" class="opções__botão" />
+        <label for="opcoes-favoritos" class="opções__rotulo">Favoritos</label>
+        <ul class="lista-menu">
+          <li class="lista-menu__item"><a href="#" class="lista-menu__link">naruto</a></li>
+          <li class="lista-menu__item"><a href="#" class="lista-menu__link">black clover</a></li>
+          <li class="lista-menu__item"><a href="#" class="lista-menu__link">Jujutsu Kaisen</a></li>
+          <li class="lista-menu__item"><a href="#" class="lista-menu__link">Dragon Ball	z</a></li>
+          <li class="lista-menu__item"><a href="#" class="lista-menu__link">Doraemon</a></li>
+        </ul>
+      </li>
+
+      <!-- Minha Estante -->
+      <li class="opções__item">
+        <input type="checkbox" id="opcoes-estante" class="opções__botão" />
+        <label for="opcoes-estante" class="opções__rotulo">Minha Estante</label>
+        <ul class="lista-menu">
+          <li class="lista-menu__item"><a href="#" class="lista-menu__link">demon slayer</a></li>
+          <li class="lista-menu__item"><a href="#" class="lista-menu__link">Jujutsu Kaisen</a></li>
+          <li class="lista-menu__item"><a href="#" class="lista-menu__link">Os Cavaleiros do Zodíaco</a></li>
+          <li class="lista-menu__item"><a href="#" class="lista-menu__link">Yu-Gi-Oh!</a></li>
+          <li class="lista-menu__item"><a href="#" class="lista-menu__link">Code Geass</a></li>
+        </ul>
+      </li>
+    </ul>
+  </header>
+
+  <!-- Elementos adicionais -->
+  <div class="container">
+    <a href="#"><img src="img/Favoritos.svg" alt="Meus favoritos" class="container__imagem container__imagem-transparente"></a>
+    <a href="#" class="container__link">
+ 
+<img src="img/Favoritos.svg" alt="Meus favoritos"
+          class="container__imagem container__imagem-transparente"></a>
+      <a href="#" class="container__link">
+        <img src="img/Compras.svg" alt="Carrinhos de compras" class="container__imagem">
+        <p class="container__texto">Minha sacola</p>
+      </a>
+      <a href="#" class="container__link">
+        <img src="img/Usuario.svg" alt="Meu perfil" class="container__imagem">
+        <p class="container__texto">Meu perfil</p>
+      </a>
+    </div>
+  </header>
+
+  <section class="banner">
+    <h2 class="banner__titulo">Já sabe por onde começar?</h2>
+    <p class="banner__texto">Encontre em nosssa estante todos os mangás que você quiser!</p>
+    <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima leitura?">
+  </section>
+
+  <section class="carrossel">
+    <h2 class="carrossel__titulo">Novos lançamentos</h2>
+
+    <div class="carrossel__container">
+      <!-- Slider main container -->
+      <div class="swiper">
+
+        <div class="swiper-pagination"></div>
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><img src="img/81ZwggSh1zL._AC_UF1000,1000_QL80_.jpg"
+              alt="Jujutsu Kaisen é um mangá japonês escrito e ilustrado por Gege Akutami, serializado na Weekly Shōnen Jump desde 5 de março de 2018"></div>
+          <div class="swiper-slide"><img src="img/demon.jpg"
+              alt="conhecido pelo título em língua inglesa Demon Slayer é uma série japonesa de mangá shōnen escrita e ilustrada por Koyoharu Gotōge"></div>
+          <div class="swiper-slide"><img src="img/naruto.jpg" alt="mangá que conta a história de Naruto Uzumaki, um jovem ninja que constantemente procura por reconhecimento e sonha em se tornar Hokage, o ninja líder de sua vila.">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/81ZwggSh1zL._AC_UF1000,1000_QL80_.jpg" alt="Livro Guia front end" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/demon.jpg" alt="Livro sobre portugol" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/naruto.jpg" alt="Livro sobre acessibilidade" />
+          </div>
+        </div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+      </div>
+
+      <div class="card">
+        <div class="card__descrição">
+          <div class="descrição">
+            <h3 class="descrição__titulo">Talvez você também se interesse por...</h3>
+            <h2 class="descrição__titulo-livro">dragon ball z</h2>
+            <p class="descrição__texto">
+              As aventuras de um poderoso guerreiro chamado Goku, seu filho Gohan e seus aliados, que se esforçam para defender a Terra das ameaças.
+            </p>
+          </div>
+          <img src="img/Angular.svg" class="descrição__imagem" />
+        </div>
+        <div class="card__botões">
+          <ul class="botões">
+            <li class="botões__item">
+              <img src="img/Favoritos.svg" alt="Favoritar livro" />
+            </li>
+            <li class="botões__item">
+              <img src="img/Compras.svg" alt="Adicionar no carrinho de compras" />
+            </li>
+          </ul>
+          <a href="#" class="botões__ancora">Saiba mais</a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section class=”carrossel”>
+    <h2 class="carrossel__titulo">Mais vendidos</h2>
+
+    <div class="carrossel__container">
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><img src="img/manga-cavaleiros-do-zodiaco-saint-seiya-kanzenban-19-capa.jpg"
+              alt="Livro sobre apache kafka e spring boot da alura books"></div>
+          <div class="swiper-slide"><img src="img/CodeGeass-01-capa_p.jpg" alt="Livro sobre liderança em design da alura books">
+          </div>
+          <div class="swiper-slide"><img src="img/yu.jpg" alt="Livro sobre javascript assertivo da alurabooks">
+          </div>
+          <div class="swiper-slide"><img src="img/Guia Front-end.svg" alt="Livro Guia front end"></div>
+          <div class="swiper-slide"><img src="img/Portugol.svg" alt="Livro sobre portugol"></div>
+          <div class="swiper-slide"><img src="img/Acessibilidade.svg" alt="livro sobre acessibilidade"></div>
+        </div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+
+      <div class="card">
+        <!-- 1º linha -->
+        <div class="card__descrição">
+          <!-- 1º coluna -->
+          <div class="descrição">
+            <img src="img/Estrelinhas.svg" alt="Avaliação 5 estrelas">
+            <h3 class="descrição__titulo">Autora do Mês</h3>
+            <h2 class="descrição__titulo-livro">Koyoharu Gotouge</h2>
+            <p class="descrição__texto">Koyoharu Gotouge é um mangaká japonês, conhecido pela série de mangá Demon Slayer: Kimetsu no Yaiba
+            </p>
+          </div>
+          <!-- 2º coluna -->
+          <img src="img/shool.jpg" class="descrição__imagem">
+        </div>
+
+        <!-- 2º linha -->
+        <div class="card__botões">
+          <!-- 1º coluna -->
+          <ul class="botões">
+            <li class="botões__item"><img src="img/Favoritos.svg" alt="Favoritar livro"></li>
+            <li class="botões__item"><img src="img/Compras.svg" alt="Adicionar no carrinho de compras"></li>
+          </ul>
+          <!-- 2º coluna -->
+          <a href="#" class="botões__ancora">Saiba mais</a>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+
+  <section class="tópicos">
+    <h2 class="tópicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
+    <ul class="tópicos__lista">
+      <li class="tópicos__item"><a href="#" class="tópicos__link">demon slayer</a></li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Naruto</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">jujutsu kaisen</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">cavaleiro de zodiaco</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">black clover</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">boruto</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">ultraman</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Dragon Ball Z</a>
+      </li>
+    </ul>
+  </section>
+
+  <section class="contato">
+    <div class="contato__descrição">
+      <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+      <p class="contato__texto">
+        Atualizações de mangás, novos mangás, promoções e outros.
+      </p>
+    </div>
+    <input type="email" placeholder="        Cadastre seu e-mail" class="contato__email">
+  </section>
+
+  <hr />
+
+  <footer class="rodapé">
+    <h2 class="rodapé__titulo">Grupo Mangas</h2>
+    <ul class="lista-rodapé">
+      <li class="lista-rodapé__titulo">animes</li>
+      <li class="lista-rodapé__item">
+        <img src="img/gokuin.png" alt="Logo do gokuin" />
+        <a href="#" class="lista-rodapé__link">gokuin</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/dem.jpeg" alt="Logo de demon slayer" />
+        <a href="#" class="lista-rodapé__link">demon slayer</a>
+      </li>
+    </ul>
+
+    <ul class="lista-rodapé">
+      <li class="lista-rodapé__titulo">mangás</li>
+      <li class="lista-rodapé__item">
+        <img src="img/shinobu.jpg" alt="Logo da shinobu" />
+        <a href="#" class="lista-rodapé__link">shinobu</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/giyuu y shinobu.jpg" alt="Logo de giyuu y shinobu" />
+        <a href="#" class="lista-rodapé__link">giyuu y shinobu</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/yuno.jpg" alt="Logo do yuno" />
+        <a href="#" class="lista-rodapé__link">yuno</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/giyuu.jpg" alt="Logo do giyuu" />
+        <a href="#" class="lista-rodapé__link">giyuu</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/levi.jpg" alt="Logo do levi" />
+        <a href="#" class="lista-rodapé__link">levi</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/rengoku.jpg" alt="Logo do rengoku" />
+        <a href="#" class="lista-rodapé__link">rengoku</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/muichiro.jpg" alt="Logo do muichiro" />
+        <a href="#" class="lista-rodapé__link">muichiro</a>
+      </li>
+    </ul>
+
+    <ul class="lista-rodapé">
+      <li class="lista-rodapé__titulo">personagens</li>
+      <li class="lista-rodapé__item">
+        <img src="img/light.jpg" alt="Logo do light" />
+        <a href="#" class="lista-rodapé__link">light</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/eren.jpg" alt="Logo do eren" />
+        <a href="#" class="lista-rodapé__link">eren</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/meliodas.png" alt="Logo do meliodas" />
+        <a href="#" class="lista-rodapé__link">meliodas</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/mitsuri.jpg" alt="Logo da mitsuri" />
+        <a href="#" class="lista-rodapé__link">mitsuri</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/obanai.jpg" alt="Logo do obanai" />
+        <a href="#" class="lista-rodapé__link">obanai</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/luffy.jpg" alt="Logo do luffy" />
+        <a href="#" class="lista-rodapé__link">luffy</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/uzui.jpg" alt="Logo do uzui" />
+        <a href="#" class="lista-rodapé__link">uzui</a>
+      </li>
+    </ul>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".swiper", {
+      spaceBetween: 10,
+      slidesPerView: 3,
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+      },
+    });
+  </script>
+</body>
+
+</html>
